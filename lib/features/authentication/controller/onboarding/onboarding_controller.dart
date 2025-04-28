@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
+import '../../screens/login/login.dart';
+
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
 
@@ -31,7 +33,7 @@ class OnBoardingController extends GetxController {
 
       storage.write('IsFirstTime', false);
 
-      // Get.offAll(const LoginScreen());
+      Get.offAll(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
