@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:t_store/features/authentication/screens/signup/signup.dart';
 import 'package:t_store/untils/constants/sizes.dart';
 
 import '../../../../../untils/constants/text_strings.dart';
 
 class TLoginForm extends StatelessWidget {
-  const TLoginForm({
-    super.key,
-  });
+  const TLoginForm({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: EdgeInsets.symmetric(
-          vertical: TSizes.spaceBtwSections,
-        ),
+        padding: EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
         child: Column(
           children: [
             //email
@@ -25,9 +24,9 @@ class TLoginForm extends StatelessWidget {
                 labelText: TTexts.email,
               ),
             ),
-    
+
             SizedBox(height: TSizes.spaceBtwInputFields),
-    
+
             //password
             TextFormField(
               decoration: InputDecoration(
@@ -36,9 +35,9 @@ class TLoginForm extends StatelessWidget {
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
-    
+
             SizedBox(height: TSizes.spaceBtwInputFields / 2),
-    
+
             //Remember Me & Forget Password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +49,7 @@ class TLoginForm extends StatelessWidget {
                     Text(TTexts.rememberMe),
                   ],
                 ),
-    
+
                 //Forget PassWord
                 TextButton(
                   onPressed: () {},
@@ -59,7 +58,7 @@ class TLoginForm extends StatelessWidget {
               ],
             ),
             SizedBox(height: TSizes.spaceBtwSections),
-    
+
             //Sign In Button
             SizedBox(
               width: double.infinity,
@@ -68,14 +67,16 @@ class TLoginForm extends StatelessWidget {
                 child: Text(TTexts.signIn),
               ),
             ),
-    
+
             SizedBox(height: TSizes.spaceBtwItems),
-    
+
             //Create Account Button
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => SignupScreen());
+                },
                 child: Text(TTexts.createAccount),
               ),
             ),
