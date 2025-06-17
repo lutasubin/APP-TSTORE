@@ -6,15 +6,17 @@ import 'package:t_store/untils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({
-    super.key,
+    Key? key,
     required this.image,
     required this.title,
     required this.subtitle,
     required this.onPressed,
-  });
+    // this.onPressed,
+  }) : super(key: key);
 
   final String image, title, subtitle;
   final VoidCallback onPressed;
+  // final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -24,34 +26,33 @@ class SuccessScreen extends StatelessWidget {
           padding: TSpacingStyle.paddingWithAppBarHeight * 2,
           child: Column(
             children: [
-              //image
+              /// Image
               Image(
                 image: AssetImage(image),
                 width: THelperFunctions.screenWidth() * 0.6,
               ),
-              SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
-              //title and Subtitle
+              /// Title & Subtitle
               Text(
                 title,
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
-
+              const SizedBox(height: TSizes.spaceBtwItems),
               Text(
                 subtitle,
-                style: Theme.of(context).textTheme.labelMedium,
+                style: Theme.of(context).textTheme.labelLarge,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
-              //button
+              /// Buttons
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  child: Text(TTexts.tContinue),
+                  child: const Text(TTexts.tContinue),
                 ),
               ),
             ],

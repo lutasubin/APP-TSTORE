@@ -23,10 +23,15 @@ dependencies:
   url_launcher: ^6.3.1
   flutter_native_splash: ^2.4.6
   smooth_page_indicator: ^1.2.1
+  
+
 
   # State Management
   get: ^4.7.2
   get_storage: ^2.1.1
+  carousel_slider: ^5.1.1
+  flutter_rating_bar: ^4.0.1
+  lottie: ^3.3.1
  
 
   
