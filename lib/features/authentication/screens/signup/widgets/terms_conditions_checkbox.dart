@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/untils/constants/colors.dart';
-import 'package:t_store/untils/constants/text_strings.dart';
-import 'package:t_store/untils/helpers/helper_functions.dart';
+import 'package:t_store/utils/constants/colors.dart';
+import 'package:t_store/utils/constants/text_strings.dart';
+import 'package:t_store/utils/helpers/helper_functions.dart';
 
 class TTermsAndConditionCheckbox extends StatelessWidget {
   const TTermsAndConditionCheckbox({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:t_store/untils/constants/colors.dart';
-import 'package:t_store/untils/constants/sizes.dart';
+import 'package:t_store/utils/constants/colors.dart';
+import 'package:t_store/utils/constants/sizes.dart';
 
 
 /// A widget for displaying an animated loading indicator with optional text & action button

@@ -5,9 +5,9 @@ import 'package:t_store/features/authentication/screens/onboarding/widgets/onboa
 import 'package:t_store/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:t_store/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:t_store/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:t_store/untils/constants/text_strings.dart';
+import 'package:t_store/utils/constants/text_strings.dart';
 
-import '../../../../untils/constants/image_strings.dart';
+import '../../../../utils/constants/image_strings.dart';
 
 
 class OnBoardingScreen extends StatelessWidget {

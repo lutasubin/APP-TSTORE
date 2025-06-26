@@ -7,8 +7,8 @@ import 'package:t_store/common/widgets/custom_shapes/containers/search_container
 import 'package:t_store/features/shop/screens/home/widget/home_appbar.dart';
 import 'package:t_store/features/shop/screens/home/widget/home_categories.dart';
 import 'package:t_store/features/shop/screens/home/widget/promo_slider.dart';
-import 'package:t_store/untils/constants/image_strings.dart';
-import 'package:t_store/untils/constants/sizes.dart';
+import 'package:t_store/utils/constants/image_strings.dart';
+import 'package:t_store/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

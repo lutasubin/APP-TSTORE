@@ -5,9 +5,9 @@ import 'package:iconsax/iconsax.dart';
 import 'package:t_store/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:t_store/features/authentication/screens/signup/signup.dart';
 import 'package:t_store/navigation_menu.dart';
-import 'package:t_store/untils/constants/sizes.dart';
+import 'package:t_store/utils/constants/sizes.dart';
 
-import '../../../../../untils/constants/text_strings.dart';
+import '../../../../../utils/constants/text_strings.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm({super.key});

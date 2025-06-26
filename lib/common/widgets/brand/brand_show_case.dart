@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:t_store/common/widgets/brand/brand_card.dart';
 import 'package:t_store/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:t_store/untils/constants/colors.dart';
-import 'package:t_store/untils/constants/sizes.dart';
-import 'package:t_store/untils/helpers/helper_functions.dart';
+import 'package:t_store/utils/constants/colors.dart';
+import 'package:t_store/utils/constants/sizes.dart';
+import 'package:t_store/utils/helpers/helper_functions.dart';
 
 class TBrandShowcase extends StatelessWidget {
   const TBrandShowcase({
