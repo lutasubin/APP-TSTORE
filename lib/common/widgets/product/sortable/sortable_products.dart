@@ -5,9 +5,7 @@ import 'package:t_store/common/widgets/product/product_cards/product_card_vertic
 import 'package:t_store/utils/constants/sizes.dart';
 
 class TSortableProducts extends StatelessWidget {
-  const TSortableProducts({
-    super.key,
-  });
+  const TSortableProducts({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,20 +13,22 @@ class TSortableProducts extends StatelessWidget {
       children: [
         /// Dropdown
         DropdownButtonFormField(
-          items: [
-            'Name',
-            'Higher Price',
-            'Lower price',
-            'Sale',
-            'Newest',
-            'Popularity'
-          ]
-              .map((option) =>
-              DropdownMenuItem(value: option, child: Text(option)))
-              .toList(),
+          items:
+              [
+                    'Name',
+                    'Higher Price',
+                    'Lower price',
+                    'Sale',
+                    'Newest',
+                    'Popularity',
+                  ]
+                  .map(
+                    (option) =>
+                        DropdownMenuItem(value: option, child: Text(option)),
+                  )
+                  .toList(),
           onChanged: (value) {},
-          decoration:
-          const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
+          decoration: const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
         ),
         const SizedBox(height: TSizes.spaceBtwSections),
 

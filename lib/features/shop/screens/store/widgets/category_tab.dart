@@ -7,7 +7,7 @@ import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 
 class TCategoryTab extends StatelessWidget {
-  const TCategoryTab({Key? key}) : super(key: key);
+  const TCategoryTab({super.key});
 
   @override
   Widget build(BuildContext context) {

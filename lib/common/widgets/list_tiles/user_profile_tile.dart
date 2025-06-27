@@ -23,14 +23,14 @@ class TUserProfileTile extends StatelessWidget {
         padding: 0,
       ),
       title: Text(
-        'John Smith',
+        'Thanh Nguyen',
         style: Theme.of(context)
             .textTheme
             .headlineSmall!
             .apply(color: TColors.white),
       ),
       subtitle: Text(
-        'johnsmith@gmail.com',
+        'thanhnguyen@gmail.com',
         style:
             Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),
       ),

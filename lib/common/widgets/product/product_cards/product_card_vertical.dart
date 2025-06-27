@@ -8,11 +8,11 @@ import 'package:t_store/common/widgets/images/t_rounded_image.dart';
 import 'package:t_store/common/widgets/texts/product_price_text.dart';
 import 'package:t_store/common/widgets/texts/product_title_text.dart';
 import 'package:t_store/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
+import 'package:t_store/features/shop/screens/product_details/product_detail.dart';
 import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/helpers/helper_functions.dart';
-
 
 class TProductCardVertical extends StatelessWidget {
   const TProductCardVertical({super.key});
@@ -23,7 +23,9 @@ class TProductCardVertical extends StatelessWidget {
 
     /// Container with side paddings, color, edges, radius, & shadow
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Get.to(() => const ProductDetailScreen());
+      },
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -54,12 +56,14 @@ class TProductCardVertical extends StatelessWidget {
                       radius: TSizes.sm,
                       backgroundColor: TColors.secondary.withOpacity(0.8),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: TSizes.sm, vertical: TSizes.xs),
+                        horizontal: TSizes.sm,
+                        vertical: TSizes.xs,
+                      ),
                       child: Text(
                         '25%',
-                        style: Theme.of(context).textTheme.labelLarge!.apply(
-                              color: TColors.black,
-                            ),
+                        style: Theme.of(
+                          context,
+                        ).textTheme.labelLarge!.apply(color: TColors.black),
                       ),
                     ),
                   ),
@@ -112,18 +116,14 @@ class TProductCardVertical extends StatelessWidget {
                     color: TColors.dark,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(TSizes.cardRadiusMd),
-                      bottomRight:
-                      Radius.circular(TSizes.productImageRadius),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
                     ),
                   ),
                   child: const SizedBox(
                     width: TSizes.iconLg * 1.2,
                     height: TSizes.iconLg * 1.2,
                     child: Center(
-                      child: Icon(
-                        Iconsax.add,
-                        color: TColors.white,
-                      ),
+                      child: Icon(Iconsax.add, color: TColors.white),
                     ),
                   ),
                 ),
@@ -135,6 +135,3 @@ class TProductCardVertical extends StatelessWidget {
     );
   }
 }
-
-
-
